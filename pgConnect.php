@@ -20,7 +20,7 @@
          $time = date("Y-m-d H:i:s");
          $sql =<<<EOF
             INSERT INTO news (heading,content,priority,place_top,is_deleted,time_created,last_updated,group_id)
-            VALUES ('$title', '$content','0','true','true','$time','$time',3);
+            VALUES ('$title', '$content','0','true','false','$time','$time',3);
 EOF;
          $ret = pg_query($db, $sql);
          if(!$ret){
