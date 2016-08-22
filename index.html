@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Church Message Publish</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/ajaxScript.js"></script>
+</head>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        	<img class="img-rounded" src="img/msb-m.png">
+            <a class="navbar-brand" href="#"><strong>Church Message Publish<strong></a>            
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+        <div role="form"  id="sentToBack">
+            <div class="form-group">
+                <label for="title">Message Title:</label>
+                <input type="text" class="form-control" id="title">
+                <label for="message">Message Content:</label>
+                <textarea class="form-control" rows="5" id="message"></textarea>
+                <label for="acnt">Account:</label>
+                <input type="account" class="form-control" id="acnt" placeholder="Enter Account">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">                
+            </div>
+            <button class="btn btn-primary" onClick="Submit()">Submit</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
