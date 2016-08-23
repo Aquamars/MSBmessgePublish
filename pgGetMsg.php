@@ -8,7 +8,7 @@ if(!$db){
    echo "Error : Unable to open database";
 } else {
    $sql =<<<EOF
-      SELECT news_id, heading, content, last_updated, group_id from news WHERE (is_deleted = FALSE AND group_id='3') ORDER BY last_updated DESC;
+      SELECT news_id, heading, content, last_updated, group_id from news WHERE (is_deleted = FALSE AND group_id='5611267') ORDER BY last_updated DESC;
 EOF;
 // $sql =<<<EOF
 //       SELECT news_id, heading, content, last_updated, group_id from news;
