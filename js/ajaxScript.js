@@ -83,7 +83,7 @@ function updateMsg(num){
 function ShowDel(num){
     $("[id=icons]").hide();
     var inputAuth = '<div id="auth"><label for="DelAcnt">Account:</label><input type="account" class="form-control" id="DelAcnt" placeholder="Enter Account"><label for="DelPwd">Password:</label><input type="password" class="form-control" id="DelPwd" placeholder="Enter password">';
-    var delBtn =inputAuth + '<br><button class="btn btn-danger" onClick="delMsg('+num+')">Remove</button><button class="btn btn-info" onClick="cancel('+num+')">Cancel</button></div>';
+    var delBtn =inputAuth + '<br><button class="btn btn-danger" onClick="delMsg('+num+')">Remove</button><button class="btn btn-info" onClick="cancelDel('+num+')">Cancel</button></div>';
     $('#panel'+num).append(delBtn);
 }
 
@@ -117,5 +117,10 @@ function cancel(num){
     $('#well'+num).empty();
     $('#well'+num).append(msg);
     $('#auth').remove();
+    $("[id=icons]").show();
+}
+
+function cancelDel(num){
+    $("#auth").remove();     
     $("[id=icons]").show();
 }
